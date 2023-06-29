@@ -18,7 +18,7 @@ function HomePage({ data }) {
 
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="SEHYEON" />
       <Bio author={author} language={language} />
       <PostTabs
         posts={posts}
@@ -64,7 +64,7 @@ export const pageQuery = graphql`
           }
           social {
             github
-            linkedIn
+            instagram
             email
           }
         }

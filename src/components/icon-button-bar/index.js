@@ -6,7 +6,8 @@ import PlayIcon from '@mui/icons-material/PlayArrowOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AndroidIcon from '@mui/icons-material/Android';
 import AppleIcon from '@mui/icons-material/Apple';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import './style.scss';
 
@@ -26,8 +27,8 @@ function IconButtonBar({ links = {} }) {
         return <AppleIcon {...props} />;
       case 'email':
         return <EmailIcon {...props} />;
-      case 'linkedIn':
-        return <LinkedInIcon {...props} />;
+      case 'instagram':
+        return <InstagramIcon {...props} />;
       default:
         return <></>;
     }

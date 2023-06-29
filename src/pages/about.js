@@ -12,7 +12,7 @@ function AboutPage({ data }) {
   const { timestamps, projects } = about;
   return (
     <Layout>
-      <Seo title="About" />
+      <Seo title="SEHYEON | About" />
       <Bio author={author} language={language} />
       <TimeStampSection timestamps={timestamps} />
       <ProjectSection projects={projects} />
@@ -38,7 +38,7 @@ export const pageQuery = graphql`
           }
           social {
             github
-            linkedIn
+            instagram
             email
           }
         }
