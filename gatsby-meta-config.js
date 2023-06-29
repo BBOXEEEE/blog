@@ -6,7 +6,7 @@ module.exports = {
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `BBOXEEEE/blog`, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
@@ -19,7 +19,7 @@ module.exports = {
     },
     social: {
       github: `https://github.com/BBOXEEEE`,
-      instagram: `https://www.instagram.com/_sxhxun/`, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
+      instagram: `https://www.instagram.com/_sxhxun/`,
       email: `noeyhesx@naver.com`,
     },
   },
@@ -71,18 +71,6 @@ module.exports = {
       },
       // ========================================================
       // ========================================================
-      {
-        title: '개발 블로그 테마 개발',
-        description:
-          '개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.',
-        techStack: ['gatsby', 'react'],
-        thumbnailUrl: 'blog.png',
-        links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
-        },
-      },
     ],
   },
 };
