@@ -51,6 +51,15 @@ module.exports = {
           demo: '',
         },
       },
+      {
+        date: '2023.06.29 ~',
+        activity: '개발 블로그 운영',
+        links: {
+          post: '',
+          github: 'https://github.com/BBOXEEEE/blog',
+          demo: 'https://sxhxun.com',
+        },
+      },
     ],
 
     projects: [
