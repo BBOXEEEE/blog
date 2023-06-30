@@ -28,7 +28,7 @@ UI 측면에서도 기능적인 측면에서도 내가 생각하고 원했던 Ga
 
 ### ⚙️ npm install 오류
 
-![npm install](./img002.png)
+![npm install](./img02.png)
 
 나는 깃허브 저장소를 clone 한 프로젝트에 `npm install` 을 하니까 이런 에러가 발생했다. <br>
 당황하지 말고 `--legacy-peer-deps` 를 추가해 `npm install` 을 하면 된다! 이유는 import 해온 프로젝트이기 때문에 발생하는 문구이고 지극히 정상적인 것이다!
