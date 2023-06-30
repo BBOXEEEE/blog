@@ -21,27 +21,6 @@ module.exports = {
       },
     },
     {
-      /*
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        resolveEnv: () => NETLIFY_ENV,
-        env: {
-          production: {
-            policy: [{ userAgent: '*', allow: '/'}],
-          },
-          'branch-deploy': {
-            policy: [{ userAgent: '*', allow: '/' }],
-            sitemap: 'https://www.sxhxun.com/sitemap.xml',
-            host: 'https://www.sxhxun.com',
-          },
-          'deploy-preview': {
-            policy: [{ userAgent: '*', allow: '/' }],
-            sitemap: 'https://www.sxhxun.com/sitemap.xml',
-            host: 'https://www.sxhxun.com',
-          },
-        },
-      },
-      */
      resolve: 'gatsby-plugin-robots-txt',
      options: {
       host: 'https://sxhxun.com/',
