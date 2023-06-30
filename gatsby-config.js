@@ -42,6 +42,7 @@ module.exports = {
         },
       },
       */
+     resolve: 'gatsby-plugin-robots-txt',
      options: {
       host: 'https://sxhxun.com/',
       sitemap: 'https://sxhxun.com/sitemap.xml',
