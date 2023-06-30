@@ -21,12 +21,13 @@ module.exports = {
       },
     },
     {
+      /*
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*' }],
+            policy: [{ userAgent: '*', allow: '/'}],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', allow: '/' }],
@@ -40,6 +41,12 @@ module.exports = {
           },
         },
       },
+      */
+     options: {
+      host: 'https://sxhxun.com/',
+      sitemap: 'https://sxhxun.com/sitemap.xml',
+      policy: [{ userAgent: '*', allow: '/' }],
+     },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
