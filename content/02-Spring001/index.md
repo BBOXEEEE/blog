@@ -1,5 +1,5 @@
 ---
-emoji: 📚
+emoji: 🎉
 title: 스프링의 기초를 알아보자 - 인프런 김영한 스프링 입문
 date: '2023-06-30 00:00:00'
 author: SEHYEON
