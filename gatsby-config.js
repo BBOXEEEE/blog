@@ -7,6 +7,15 @@ module.exports = {
 
   plugins: [
     {
+      // resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingId: metaConfig.ga,
+        head: true,
+        anonymize: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
@@ -27,15 +36,6 @@ module.exports = {
       sitemap: 'https://sxhxun.com/sitemap.xml',
       policy: [{ userAgent: '*', allow: '/' }],
      },
-    },
-    {
-      // resolve: `gatsby-plugin-google-analytics`,
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: metaConfig.ga,
-        head: true,
-        anonymize: true,
-      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
