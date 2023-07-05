@@ -40,7 +40,7 @@ categories: SPRING
 ### 💡 회원 도메인
 - 아래와 같이 `domain` 패키지를 만들고, `Member.java` 파일을 생성해 회원 정보를 담는 객체를 생성한다.
 ![Member.java](./img03.png)
-```JAVA
+```java
 package com.example.hellospring.domain;
 
 public class Member {
@@ -67,7 +67,7 @@ public class Member {
 ### 💡 회원 리포지토리
 - 아래와 같이 `repository` 패키지를 만들고, `MemberRepository.java` 인터페이스를 만들어 4가지 기능을 선언해준다.
 ![MemberRepository.java](./img04.png)
-```JAVA
+```java
 package com.example.hellospring.repository;
 
 import com.example.hellospring.domain.Member;
@@ -85,7 +85,7 @@ public interface MemberRepository {
 - 여기서 `Optional` 은 반환값이 null인 경우를 고려해 Optional로 null을 감싸서 반환해주는 자바 8부터 지원하는 기능이다.
 ### 💡 회원 리포지토리 메모리 구현체
 - `repository` 패키지 하위에 `MemoryMemberRepository.java` 파일을 생성해 인터페이스에 담긴 기능을 작성한다.
-```JAVA
+```java
 package com.example.hellospring.repository;
 
 import com.example.hellospring.domain.Member;
@@ -140,7 +140,7 @@ public class MemoryMemberRepository implements MemberRepository{
 - 아래와 같이 `repository` 패키지를 만들고, `MemoryMemberRepositoryTest.java` 파일을 생성한다.
 - 일반적으로 테스트하고자 하는 파일명 뒤에 `Test` 를 붙여 클래스를 생성한다.
 - 테스트는 `@Test` 어노테이션을 사용해 테스트 코드를 작성하며 테스트하고자 하는 코드를 작성하면 된다.
-```JAVA
+```java
 package com.example.hellospring.repository;
 
 import com.example.hellospring.domain.Member;
@@ -205,7 +205,7 @@ public class MemoryMemberRepositoryTest {
 - 자, 그런데 자세히 보면 테스트 실행 순서는 우리가 코드를 작성한 순서와는 다르다는 것을 확인할 수 있다.
 - 테스트는 각각 독립적으로 실행되어야 하며, 테스트 순서에 의존관계가 있는 것은 좋은 테스트가 아니다!
 - 또한, `@AfterEach` 코드를 조금 더 자세히 알아보도록 하자!
-``` JAVA
+``` java
     @AfterEach
     public void afterEach(){
         repository.clearStore();
@@ -220,7 +220,7 @@ public class MemoryMemberRepositoryTest {
 - 아래와 같이 `service` 패키지를 만들고, `MemberService.java` 파일을 생성한다.
 ![MemberService.java](./img07.png)
 - 여기서는 회원가입 시 같은 이름이 있는 중복회원을 방지하기 위한 로직을 작성하고, 전체 회원을 조회하는 로직을 작성한다.
-```JAVA
+```java
 package com.example.hellospring.service;
 
 import com.example.hellospring.domain.Member;
@@ -271,7 +271,7 @@ public class MemberService {
 ### 💡 회원 서비스 코드를 DI 가능하게 변경
 - 기존에는 회원 서비스가 메모리 회원 리포지토리를 직접 생성하게 했다.
 - 각 테스트가 서로 영향이 없도록 항상 새로운 객체를 생성하도록 하기 위해 `MemberService.java` 코드를 아래와 같이 수정해준다!
-```JAVA
+```java
 public class MemberService {
     private final MemberRepository memberRepository;
 
@@ -282,7 +282,7 @@ public class MemberService {
 }
 ```
 ### 💡 회원 서비스 테스트
-```JAVA
+```java
 package com.example.hellospring.service;
 
 import com.example.hellospring.domain.Member;

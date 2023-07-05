@@ -17,7 +17,7 @@ categories: SPRING
 ### ❓ 정적 컨텐츠란?
 정적 컨텐츠란, 단순히 파일 그대로를 웹 브라우저에 반환하는 것을 말한다. 다시 말하면 `resources/static` 하위에 html 파일을 생성하면 단순한 정적인 html 컨텐츠를 웹 브라우저에 반환해준다. 
 ### 📌 예시를 통해 알아보자!
-```HTML
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -42,7 +42,7 @@ categories: SPRING
 Model, View, Controller의 약자로 역할과 책임을 분리하기 위해 각각의 역할을 나누어 동작을 수행하도록 하는 디자인 패턴이다. 기존에는 View에서 Controller의 기능까지 모두 구현했었다. 이것을 Model 1 방식이라고 한다. 그러나 MVC 방식에서는 Model과 Controller는 내부적으로 비지니스 로직을 처리하는데 집중하고, View는 화면 설계 및 보여지는 부분을 처리하는데 집중하는데, 이것을 Model 2 방식이라고 한다.
 ### 📌 예시를 통해 알아보자!
 - Controller
-```JAVA
+```java
 @Controller
 public class HelloController {
     @GetMapping("hello-mvc")
@@ -55,7 +55,7 @@ public class HelloController {
 - 우리가 처음 만들었던, `HelloController` 파일 안에 위의 코드를 추가해준다. <br><br>
 
 - View
-```HTML
+```html
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
 <p th:text="'hello ' + ${name}">hello! empty</p>
@@ -79,7 +79,7 @@ public class HelloController {
 ### ❓ API란?
 정적 컨텐츠를 제외하면 값을 반환하는 방식은 2가지가 있는데, `HTML` 파일을 반환할 것인지, `API` 를 사용해 값을 줄 것인지로 나뉜다고 볼 수 있다. 오늘 강의에서는 `@ResponseBody` 를 통해 문자를 반환하는 것과 객체를 반환하는 것을 다루었고, 이 2가지에 대해 알아보자!
 ### 📌 @ResponseBody 문자 반환
-```JAVA
+```java
 @Controller
 public class HelloController {
 	@GetMapping("hello-string")
@@ -93,7 +93,7 @@ public class HelloController {
 - HelloController 파일에 위의 코드를 추가해준다.
 - `@ResponseBody`를 사용하게 되면 viewResolver를 사용하지 않고, HTTP의 Body에 문자 내용을 직접 반환한다. 여기서 HTTP Body는 HTML의 body 태그가 아니다!
 ### 📌 @ResponseBody 객체 반환
-```JAVA
+```java
 @Controller
 public class HelloController {
 	@GetMapping("hello-api")

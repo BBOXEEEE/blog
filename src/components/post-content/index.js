@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.scss';
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 function PostContent({ html }) {
   return (

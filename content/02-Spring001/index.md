@@ -62,7 +62,7 @@ categories: SPRING
 
 ## 3. Welcome Page 만들기
 지금부터는 서버를 처음 시작했을 때의 Welcome Page를 만들어본다.
-```HTML
+```html
 <!DOCTYPE HTML>
   <html>
   <head>
@@ -87,7 +87,7 @@ Thymeleaf 템플릿 엔진은 쉽게 말해 HTML을 만들어주는 템플릿 �
 ![타임리프엔진](./img03.png)
 위와 같은 경로에 아래 소스코드를 입력한다!
 - Controller 
-```JAVA
+```java
 @Controller
   public class HelloController {
       @GetMapping("hello")
@@ -98,7 +98,7 @@ Thymeleaf 템플릿 엔진은 쉽게 말해 HTML을 만들어주는 템플릿 �
 }
 ```
 - View
-```HTML
+```html
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
