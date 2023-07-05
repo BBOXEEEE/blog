@@ -7,6 +7,9 @@ tags: 개발 블로그 Gatsby 블로그 blog
 categories: 블로그
 ---
 
+![썸네일](./thumbnail.png)
+<br><br>
+
 ## ✋ 블로그를 시작하게된 계기
 
 ![깃허브 블로그](./img01.png)
