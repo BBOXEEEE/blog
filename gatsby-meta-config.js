@@ -1,6 +1,6 @@
 module.exports = {
   title: `sxhxun.com`,
-  description: `SEHYEON DEV-BLOG`,
+  description: `개발자 박세현`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.sxhxun.com`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
