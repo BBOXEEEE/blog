@@ -37,14 +37,13 @@ exports[`PostTemplate renders correctly 1`] = `
         <p>
           Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.
           <a
-            href="https://www.twitter.com/#"
+            href="https://blog.sxhxun.com"
             rel="noopener noreferrer"
             target="_blank"
           >
             <strong>
               John Doe
             </strong>
-             on Twitter
           </a>
         </p>
       </div>

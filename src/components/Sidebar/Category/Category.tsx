@@ -16,7 +16,7 @@ const Category: React.FC<Props> = ({ category }: Props) => (
   <div className={styles.title}>Category</div>
   <nav className={styles.category}>
     <ul className={styles.list}>
-      {category.map((item) => (
+      {category?.map((item) => (
         <li className={styles.item} key={item.path}>
           <Link
             to={item.path}

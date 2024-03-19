@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Category renders correctly 1`] = `
+[
+  <div>
+    Category
+  </div>,
+  <nav>
+    <ul>
+      <li>
+        <a
+          href="/category/typography"
+        >
+          Typography
+        </a>
+      </li>
+    </ul>
+  </nav>,
+]
+`;

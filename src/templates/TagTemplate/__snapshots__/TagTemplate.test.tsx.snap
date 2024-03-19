@@ -47,6 +47,12 @@ exports[`TagTemplate renders correctly 1`] = `
         </ul>
       </nav>
       <div>
+        Category
+      </div>
+      <nav>
+        <ul />
+      </nav>
+      <div>
         All rights reserved.
       </div>
     </div>
