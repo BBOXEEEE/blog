@@ -1,34 +1,36 @@
 {
-  "title": "Blog by John Doe",
-  "url": "https://lumen.alxshelepenok.com",
-  "subtitle": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+  "title": "Blog by Sehyeon Park",
+  "url": "https://blog.sxhxun.com",
+  "subtitle": "",
   "copyright": "© All rights reserved.",
-  "googleAnalyticsId": "UA-73379983-2",
-  "disqusShortname": "",
+  "googleAnalyticsId": "",
+  "disqusShortname": "sxhxun",
   "postsLimit": 4,
   "pathPrefix": "/",
   "menu": [
     {
-      "label": "Articles",
+      "label": "All Articles",
       "path": "/"
     },
     {
       "label": "About me",
-      "path": "/pages/about"
-    },
+      "path": "https://sxhxun.com"
+    }
+  ],
+  "category": [
     {
-      "label": "Contact me",
-      "path": "/pages/contacts"
+      "label": "Typograpy",
+      "path": "/category/typography"
     }
   ],
   "author": {
-    "name": "John Doe",
+    "name": "Sehyeon Park",
     "photo": "/photo.jpg",
-    "bio": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    "bio": "B.S. Student Korea University of Technology and Education, South Korea",
     "contacts": {
       "rss": "",
-      "email": "",
-      "github": "alxshelepenok/gatsby-starter-lumen",
+      "email": "noeyhesx@naver.com",
+      "github": "bboxeeee",
       "facebook": "#",
       "telegram": "#",
       "twitter": "#",

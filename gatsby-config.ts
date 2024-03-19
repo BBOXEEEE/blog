@@ -8,6 +8,7 @@ export default {
   siteMetadata: {
     url: config.url,
     menu: config.menu,
+    category: config.category,
     title: config.title,
     author: config.author,
     subtitle: config.subtitle,

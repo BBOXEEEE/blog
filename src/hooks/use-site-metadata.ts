@@ -33,6 +33,10 @@ const useSiteMetadata = () => {
             path
             label
           }
+          category {
+            path
+            label
+          }
           url
           title
           subtitle
