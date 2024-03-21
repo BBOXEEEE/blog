@@ -10,3 +10,4 @@ export { default as author } from "./author";
 export { default as menu } from "./menu";
 export { default as edges } from "./edges";
 export { default as category } from "./category";
+export { default as sidebarCategory} from "./sidebar-category";

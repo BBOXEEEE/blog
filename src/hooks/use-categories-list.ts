@@ -25,7 +25,7 @@ const useCategoriesList = () => {
     }
   `);
 
-  return allMarkdownRemark.group ?? [];
+  return allMarkdownRemark?.group ?? [];
 };
 
 export default useCategoriesList;

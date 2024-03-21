@@ -47,7 +47,11 @@ exports[`CategoryTemplate renders correctly 1`] = `
         </ul>
       </nav>
       <div>
-        Category
+        <a
+          href="/categories"
+        >
+          Category
+        </a>
       </div>
       <nav>
         <ul />

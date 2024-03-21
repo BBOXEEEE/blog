@@ -6,7 +6,7 @@ import { testUtils } from "@/utils";
 
 describe("Category", () => {
   test("renders correctly", () => {
-    const props = { category: mocks.category };
+    const props = { category: mocks.sidebarCategory };
     const tree = testUtils
       .createSnapshotsRenderer(<Category {...props} />)
       .toJSON();

@@ -3,7 +3,11 @@
 exports[`Category renders correctly 1`] = `
 [
   <div>
-    Category
+    <a
+      href="/categories"
+    >
+      Category
+    </a>
   </div>,
   <nav>
     <ul>
@@ -12,6 +16,9 @@ exports[`Category renders correctly 1`] = `
           href="/category/typography"
         >
           Typography
+           (
+          1
+          )
         </a>
       </li>
     </ul>
