@@ -8,12 +8,17 @@ type Props = {
   category: Array<{
     label: string;
     path: string;
+    count: number;
   }>;
 };
 
 const Category: React.FC<Props> = ({ category }: Props) => (
 <>
-  <div className={styles.title}>Category</div>
+  <div className={styles.title}>
+    <Link to='/categories' className={styles.link}>
+      Category
+    </Link>
+  </div>
   <nav className={styles.category}>
     <ul className={styles.list}>
       {category?.map((item) => (
@@ -23,7 +28,7 @@ const Category: React.FC<Props> = ({ category }: Props) => (
             className={styles.link}
             activeClassName={styles.active}
           >
-            {item.label}
+            {item.label} ({item.count})
           </Link>
         </li>
       ))}

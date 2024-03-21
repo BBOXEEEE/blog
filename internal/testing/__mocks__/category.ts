@@ -1,4 +1,4 @@
 export default [
-    { label: "Typography", path: "/category/typography" },
+    { label: "Typography", path: "/category/typography", count: 1 },
   ];
   

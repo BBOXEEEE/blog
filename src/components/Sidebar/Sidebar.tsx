@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useSiteMetadata } from "@/hooks";
+import { useSiteMetadata, useCategoriesList } from "@/hooks";
 
 import { Author } from "./Author";
 import { Contacts } from "./Contacts";
@@ -15,7 +15,14 @@ type Props = {
 };
 
 const Sidebar = ({ isIndex }: Props) => {
-  const { author, copyright, menu, category } = useSiteMetadata();
+  const { author, copyright, menu } = useSiteMetadata();
+  const categoriesList = useCategoriesList();
+  
+  const category = categoriesList.map(cat => ({
+    label: cat.fieldValue,
+    path: `/category/${cat.fieldValue.toLowerCase().replace(/\s+/g, '-')}`,
+    count : cat.totalCount
+  }));
 
   return (
     <div className={styles.sidebar}>
