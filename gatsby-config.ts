@@ -99,6 +99,14 @@ export default {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-highlight-code",
+            options: {
+              terminal: "carbon",
+              theme: "one-light",
+              lineNumbers: true,
+            },
+          },
+          {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 960,

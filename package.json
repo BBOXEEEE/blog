@@ -49,6 +49,7 @@
   "dependencies": {
     "@alxshelepenok/diesel": "^1.0.1249",
     "@alxshelepenok/diesel-extensions": "^1.0.1165",
+    "@deckdeckgo/highlight-code": "^3.6.0",
     "@sentry/gatsby": "^7.61.1",
     "@sentry/tracing": "^7.103.0",
     "abab": "^2.0.6",
@@ -69,6 +70,7 @@
     "gatsby-remark-autolink-headers": "^5.25.0",
     "gatsby-remark-copy-linked-files": "^5.25.0",
     "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-highlight-code": "^3.3.0",
     "gatsby-remark-images": "^6.25.0",
     "gatsby-remark-prismjs": "^6.25.0",
     "gatsby-remark-responsive-iframe": "^5.25.0",
