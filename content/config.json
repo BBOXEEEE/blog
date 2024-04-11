@@ -17,12 +17,6 @@
       "path": "https://sxhxun.com"
     }
   ],
-  "category": [
-    {
-      "label": "NLP",
-      "path": "/category/nlp"
-    }
-  ],
   "author": {
     "name": "Sehyeon Park",
     "photo": "/photo.jpg",

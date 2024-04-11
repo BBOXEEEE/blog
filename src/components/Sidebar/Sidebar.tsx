@@ -1,5 +1,6 @@
 import React from "react";
 
+import { toKebabCase } from "@/utils";
 import { useSiteMetadata, useCategoriesList } from "@/hooks";
 
 import { Author } from "./Author";
@@ -20,7 +21,7 @@ const Sidebar = ({ isIndex }: Props) => {
   
   const category = categoriesList.map(cat => ({
     label: cat.fieldValue,
-    path: `/category/${cat.fieldValue.toLowerCase().replace(/\s+/g, '-')}`,
+    path: `/category/${toKebabCase(cat.fieldValue)}/`,
     count : cat.totalCount
   }));
 
