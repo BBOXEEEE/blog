@@ -6,6 +6,7 @@ import { Feed } from "@/components/Feed";
 import { Layout } from "@/components/Layout";
 import { Meta } from "@/components/Meta";
 import { Page } from "@/components/Page";
+import { Header } from "@/components/Header";
 import { Pagination } from "@/components/Pagination";
 import { Sidebar } from "@/components/Sidebar";
 import { useSiteMetadata } from "@/hooks";
@@ -25,18 +26,21 @@ const IndexTemplate: React.FC<Props> = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
 
   return (
-    <Layout>
-      <Sidebar isIndex />
-      <Page>
-        <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
-      </Page>
-    </Layout>
+    <>
+      <Header title="Sehyeon.log" />
+      <Layout>
+        <Sidebar isIndex />
+        <Page>
+          <Feed edges={edges} />
+          <Pagination
+            prevPagePath={prevPagePath}
+            nextPagePath={nextPagePath}
+            hasPrevPage={hasPrevPage}
+            hasNextPage={hasNextPage}
+          />
+        </Page>
+      </Layout>
+    </>
   );
 };
 

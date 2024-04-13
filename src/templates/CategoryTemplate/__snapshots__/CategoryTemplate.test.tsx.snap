@@ -2,6 +2,14 @@
 
 exports[`CategoryTemplate renders correctly 1`] = `
 <div>
+  <header>
+    <a
+      href="/"
+    >
+      Sehyeon.log
+    </a>
+    <div />
+  </header>
   <div>
     <div>
       <div>

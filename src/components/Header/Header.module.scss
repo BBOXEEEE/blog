@@ -1,0 +1,27 @@
+@import "../../assets/scss/variables";
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.8rem 0;
+    text-align: left;
+  }
+  
+.title {
+    color: $color-dark;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10rem;
+
+    &:hover {
+        color: $color-blue;
+    }
+}
+  
+.divider {
+    border-bottom: 1px solid #ccc;
+    margin-top: 1%;
+    width: 100%;
+}
+  

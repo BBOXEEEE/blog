@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import { Feed } from "@/components/Feed";
 import { Layout } from "@/components/Layout";
 import { Meta } from "@/components/Meta";
+import { Header } from "@/components/Header";
 import { Page } from "@/components/Page";
 import { Pagination } from "@/components/Pagination";
 import { Sidebar } from "@/components/Sidebar";
@@ -25,18 +26,21 @@ const CategoryTemplate: React.FC<Props> = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
 
   return (
-    <Layout>
-      <Sidebar />
-      <Page title={group}>
-        <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
-      </Page>
-    </Layout>
+    <>
+      <Header title="Sehyeon.log" />
+      <Layout>
+        <Sidebar />
+        <Page title={group}>
+          <Feed edges={edges} />
+          <Pagination
+            prevPagePath={prevPagePath}
+            nextPagePath={nextPagePath}
+            hasPrevPage={hasPrevPage}
+            hasNextPage={hasNextPage}
+          />
+        </Page>
+      </Layout>
+    </>
   );
 };
 
