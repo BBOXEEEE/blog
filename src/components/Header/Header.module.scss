@@ -9,13 +9,15 @@
   }
   
 .title {
-    color: $color-dark;
+    color: var(--color-typographic-base-font);
     font-size: 18px;
     font-weight: bold;
     margin-left: 10rem;
 
-    &:hover {
-        color: $color-blue;
+    &:hover,
+    &:focus,
+    &:active {
+    color: var(--color-typographic-link-p-font);
     }
 }
   
