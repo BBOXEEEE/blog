@@ -1,5 +1,5 @@
 ---
-title: "NLP: Text Preprocessing"
+title: "[NLP] Text Preprocessing"
 date: "2024-03-21T00:00:00.284Z"
 template: "post"
 draft: false
